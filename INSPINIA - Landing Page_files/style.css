@@ -6694,7 +6694,7 @@ body.landing-page {
 .landing-page .caption-link {
   color: #fff;
   margin-left: 10px;
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: 400;
 }
 .landing-page .caption-link:hover {
