@@ -1,458 +1,797 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Activer le pilote automatique pour votre comptabilité">
-    <meta name="author" content="Come Fouques">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Georges, le pilote automatique pour votre comptabilité</title>
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <title>GEORGES | Banque</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./INSPINIA - Landing Page_files/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
-    <!-- Animation CSS -->
-    <link href="./INSPINIA - Landing Page_files/animate.css" rel="stylesheet">
-    <link href="./INSPINIA - Landing Page_files/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="icon" type="img/ico" href="img/landing/shattered.png">
 
-    <!-- Custom styles for this template -->
-    <link href="./INSPINIA - Landing Page_files/style.css" rel="stylesheet">
 </head>
-<body id="page-top" class="landing-page no-skin-config  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-  <div class="pace-progress-inner"></div>
-</div>
-<div class="pace-activity"></div></div>
-<div class="navbar-wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#essai"><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a class="page-scroll" href="#page-top">Accueil</a></li>
-                        <li><a class="page-scroll" href="#features">Produit</a></li>
-                        <li><a class="page-scroll" href="#essai">Inscription</a></li>
-                        <li><a class="page-scroll" href="#pricing">Tarifs</a></li>
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
-                        <!-- <li><a class="page-scroll" href="http://www.georges.tech/connexion">Connexion</a></li> -->
+
+<body>
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/1/005/0b3/188/1db5848.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Come Fouques</strong>
+                             </span> <span class="text-muted text-xs block">Location meublée <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profil</a></li>
+                            <li><a href="contacts.html">Paramètres</a></li>
+                            <li><a href="mailbox.html">Services tiers</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Déconnexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        Georges
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-money"></i> <span class="nav-label">Banques</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li class="active"><a href="index.html">Compte courant<span class="label label-primary pull-right">21</span></a></li>
+                        <li><a href="dashboard_2.html">Carte affaires JC<span class="label label-primary pull-right">12</span></a></li>
+                        <li><a href="dashboard_3.html">Carte affaires CF<span class="label label-primary pull-right">3</span></a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-newspaper-o"></i> <span class="nav-label">TVA</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-bank"></i> <span class="nav-label">Impôts</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-car"></i> <span class="nav-label">Patrimoine</span>  </a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-bar-chart"></i> <span class="nav-label">Analyse</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-cog"></i> <span class="nav-label">Paramètres</span></a>
+                </li>
+         	</ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Rechercher une écriture..." class="form-control" name="top-search" id="top-search">
                 </div>
-            </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Heureux de vous revoir sur Georges</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">3</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="index.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Synchronisation de Free - 10.2015
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="index.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Synchronisation de EDF Octobre
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="index.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Synchronisation de Déclaration CFE
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>Voir toutes les notifications</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Déconnexion
+                    </a>
+                </li>
+            </ul>
+
         </nav>
-</div>
-<div id="accroche" class="carousel carousel-fade" data-ride="carousel">
-    <div class="carousel-inner " role="listbox">
-        <div class="item active">
-            <div class="container">
-                <div class="carousel-caption blank">
-                    <h1>Georges,<br>
-                        le pilote automatique <br>
-                        de votre comptabilité</h1>
-                    <p>Banque, achats, TVA et liasses fiscales automatiques</p>
-                    <p>
-                        <a class="btn btn-lg btn-primary" href="#essai" role="button"><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
-                        <a class="caption-link" href="#features" role="button">Comment ça marche</a>
-                    </p>
+        </div>
+        
+        <div class="row wrapper border-bottom white-bg">
+        	
+                	<div class="pull-right">
+                    	<div class="widget style1 navy-bg">
+                    		<div class="row vertical-align">
+                        		<div class="text-right container-fluid">
+                            		<h2 class="font-bold">4 492,19</h2>
+                            	</div>
+                        		<div class="container-fluid">
+                            		<i class="fa fa-euro fa-2x"></i>
+                        		</div>                            	
+                        	</div>
+                    	</div>
+                	</div>        	
+        	
+                <div class="">
+
+                    <div class="">                		
+                    	<h2>Relevé de compte courant</h2>
+                    	
+                    	<ol class="breadcrumb">
+                        	<li>
+                            	<a href="index.html">Accueil</a>
+                        	</li>
+                        	<li class="active">
+                            	<strong>Compte courant</strong>
+                        	</li>
+	                    </ol>
+            		</div> 
+                      	
+
+                 
                 </div>
-                <div class="carousel-image wow zoomIn animated" style="visibility: visible;">
-                    <img src="./INSPINIA - Landing Page_files/laptop.png" alt="laptop">
+        	</div>
+
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox">
+                        <div class="ibox-content">
+
+                            <div class="table-responsive">
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>16/11</strong>
+                                    </td>
+                                    <td>
+                                        VIR SEPA COUGARD GUILLAUME
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-primary btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-thumbs-o-up"></i> &nbspRecette&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right text-navy">
+                                        <strong>+2212,99 €</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>                                
+                                <tr>
+                                    <td>
+                                        <strong>16/11</strong>
+                                    </td>
+                                    <td>
+                                        COTISATION BOUQUET LIBERTE
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-credit-card"></i> &nbspFrais financiers&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        8,40 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>16/11</strong>
+                                    </td>
+                                    <td>
+                                        REMISE SERVICES BOUQUET LIBE
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-primary btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-credit-card"></i> &nbspFrais financiers&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right text-navy">
+                                        <strong>+2,52 €</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>                                  
+                                <tr>
+                                    <td>
+                                        <strong>10/11</strong>
+                                    </td>
+                                    <td>
+                                        ECH PRET  4431066 DU 10/11/15
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-reply"></i> &nbspEmprunt&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										    <li><a href="#">Frais financier</a></li>
+										    <li><a href="#">Emprunt</a></li>										    
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        525,94 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>principal : 212,97 €</small>
+                                    </td>                                     
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>10/11</strong>
+                                    </td>
+                                    <td>
+                                        ECH PRET  4431065 DU 10/11/15
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-reply"></i> &nbspEmprunt&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										    <li><a href="#">Frais financier</a></li>
+										    <li><a href="#">Emprunt</a></li>										    
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        229,96 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>principal : 114,98 €</small>
+                                    </td>                                     
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>10/11</strong>
+                                    </td>
+                                    <td>
+                                        ECH PRET  4431064 DU 10/11/15
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-reply"></i> &nbspEmprunt&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										    <li><a href="#">Frais financier</a></li>
+										    <li><a href="#">Emprunt</a></li>										    
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        237,47 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>principal : 118,73 €</small>
+                                    </td>                                     
+                                </tr>                                                                
+                                <tr>
+                                    <td>
+                                        <strong>09/11</strong>
+                                    </td>
+                                    <td>
+                                        PRLV Free Telecom
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-phone"></i> &nbspAbonnement&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        42,98 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>7,12 € de TVA</small>
+                                    </td>                          
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>05/11</strong>
+                                    </td>
+                                    <td>
+                                        PRLV BPCE ASSURANCES
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-credit-card"></i> &nbspFrais financiers&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        30,00 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>03/11</strong>
+                                    </td>
+                                    <td>
+                                        PRLV EDF clients particuliers
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-phone"></i> &nbspAbonnement&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        49,00 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>8,17 € de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>21/10</strong>
+                                    </td>
+                                    <td>
+                                        APPEL DE CHARGES AOUT
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-building"></i> &nbspImmobilier&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        139,24 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>14/10</strong>
+                                    </td>
+                                    <td>
+                                        COTISATION BOUQUET LIBERTE
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-credit-card"></i> &nbspFrais financiers&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        8,40 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>14/10</strong>
+                                    </td>
+                                    <td>
+                                        REMISE SERVICES BOUQUET LIBE
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-primary btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-credit-card"></i> &nbspFrais financiers&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right text-navy">
+                                        <strong>+2,52 €</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>14/10</strong>
+                                    </td>
+                                    <td>
+                                        VIR SEPA COUGARD GUILLAUME
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-primary btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-thumbs-o-up"></i> &nbspRecette&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right text-navy">
+                                        <strong>+2200,00 €</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>10/10</strong>
+                                    </td>
+                                    <td>
+                                        ECH PRET  4431066 DU 10/10/15
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-reply"></i> &nbspEmprunt&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										    <li><a href="#">Frais financier</a></li>
+										    <li><a href="#">Emprunt</a></li>										    
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        525,94 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>principal : 212,97 €</small>
+                                    </td>                                     
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>10/10</strong>
+                                    </td>
+                                    <td>
+                                        ECH PRET  4431065 DU 10/10/15
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-reply"></i> &nbspEmprunt&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										    <li><a href="#">Frais financier</a></li>
+										    <li><a href="#">Emprunt</a></li>										    
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        229,96 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>principal : 114,98 €</small>
+                                    </td>                                     
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>10/10</strong>
+                                    </td>
+                                    <td>
+                                        ECH PRET  4431064 DU 10/10/15
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-reply"></i> &nbspEmprunt&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										    <li><a href="#">Frais financier</a></li>
+										    <li><a href="#">Emprunt</a></li>										    
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        237,47 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>principal : 118,73 €</small>
+                                    </td>                                     
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>08/10</strong>
+                                    </td>
+                                    <td>
+                                        PRLV Free Telecom
+                                    </td>
+                                    <td>
+                                        <div class="dropup">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-phone"></i> &nbspAbonnement&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        29,99 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>5,00 € de TVA</small>
+                                    </td>                          
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>05/10</strong>
+                                    </td>
+                                    <td>
+                                        PRLV BPCE ASSURANCES
+                                    </td>
+                                    <td>
+                                        <div class="dropup">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-credit-card"></i> &nbspFrais financiers&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        30,00 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>pas de TVA</small>
+                                    </td>                          
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        <strong>05/10</strong>
+                                    </td>
+                                    <td>
+                                        PRLV EDF clients particuliers
+                                    </td>
+                                    <td>
+                                        <div class="dropup">
+										  <button class="btn btn-success btn-xs dropdown-toggle" 
+										  type="button" id="dropdownMenu1" data-toggle="dropdown" 
+										  aria-haspopup="true" aria-expanded="true">
+										  	<i class="fa fa-phone"></i> &nbspAbonnement&nbsp <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="#">Restaurant</a></li>
+										    <li><a href="#">Fournitures</a></li>
+										    <li><a href="#">Equipement</a></li>
+										    <li><a href="#">Rémunérations</a></li>
+										  </ul>
+										</div>
+                                    </td>                                       
+                                    <td class="text-right">
+                                        49,00 €
+                                    </td>
+                                    <td class="text-right">
+                                        <small>8,17 € de TVA</small>
+                                    </td>                          
+                                </tr>                                                                                                                                                                                                                                                       
+                                </tbody>
+                            </table>
+                            <button class="btn btn-primary btn-block m-t">
+                               <i class="fa fa-arrow-down"></i> Afficher plus de lignes
+		 					</button>                             
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back one"></div>
-        </div>
-    </div>
-</div>
 
 
-<section id="features" class="container services timeline">
-    <div class="row">
-        <div class="col-sm-3">
-            <h2>Synchronisation Drive</h2>
-            <p>Scannez un ticket depuis votre téléphone ou déposez une facture sur votre dossier Drive, les données et la TVA seront extraites, saisies et réconciliées automatiquement.</p>
-            <p><a class="navy-link" href="#drive" role="button">Détails »</a></p>
         </div>
-        <div class="col-sm-3">
-            <h2>Intégrations bancaires</h2>
-            <p>Compatible avec plus de 80 banques françaises, notre import bancaire quotidien et sécurisé met à jour automatiquement la trésorerie de votre comptabilité.</p>
-            <p><a class="navy-link" href="#banque" role="button">Détails »</a></p>
-        </div>
-        <div class="col-sm-3">
-            <h2>Télétransmission fiscale</h2>
-            <p>La déclaration de TVA est générée au format de télétransmission numérique officiel. En fin d'année, vous êtes guidé pour établir votre liasse fiscale. En un clic, c'est transmis au service des impôts.</p>
-            <p><a class="navy-link" href="#fiscal" role="button">Détails »</a></p>
-        </div>
-        <div class="col-sm-3">
-            <h2>Pilotage en temps réel</h2>
-            <p>En connectant instantanément votre trésorerie et vos factures, Georges vous offre une vue complète de votre trésorerie et de votre activité en temps réel et une meilleure relance de vos clients.</p>
-            <p><a class="navy-link" href="#facturation" role="button">Détails »</a></p>
-        </div>
-    </div>
-</section>
 
-<section id="testimonials" class="navy-section testimonials" style="margin-top: 0">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center wow zoomIn" style="visibility: hidden; animation-name: none;">
-                <i class="fa fa-comment big-icon"></i>
-                <h1>
-                    " Mon comptable, c'est moi ... et Georges. <br/> J'économise à la fois du temps, et surtout de l'argent. "
-                </h1>
-                <small>
-                    <strong>21.11.2015 - Grégoire Goblot, ostéopathe à Lyon</strong>
-                </small>
+        <div class="footer">
+            <div class="pull-right">
+                Vous utilisez une version d'essai de <strong>Georges</strong>.
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="drive" class="container features">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1>Classer une pièce dans votre drive.<br> <span class="navy"> Scannée et synchronisée, hop c'est dans votre comptabilité ! </span> </h1>
-            <p>Georges est synchronisé avec Google Drive, le meilleur gestionnaire de documents pour votre comptabilité.  </p>
-        </div>
-    </div>
-    <div class="row features-text">
-        <div class="col-sm-3 col-sm-offset-1 m-t-lg text-center wow fadeInLeft" style="visibility: hidden; animation-name: none;">
             <div>
-                <i class="fa fa-search features-icon"></i>
-                <h2>Reconnaissance d'écriture</h2>
-                <p>Vous n'avez rien à faire de plus que de déposer votre pièce. La reconnaissance de caractères de Georges extrait automatiquement les informations du documents.</p>
-            </div>
-            <div class="m-t-lg">
-                <i class="fa fa-print features-icon"></i>
-                <h2>Scanner mobile</h2>
-                <p>Depuis l'application Drive, cliquez sur "+" puis "Numériser" pour transmettre à Georges une facture ou un ticket de restaurant.</p>
+                <strong>Copyright</strong> Georges &copy; 2015-2016
             </div>
         </div>
-        <div class="col-sm-4 m-t-lg text-center wow zoomIn" style="visibility: hidden; animation-name: none;">
-            <img src="./img/landing/mobile_scan.jpg" alt="dashboard">
-        </div>
-        <div class="col-sm-3 m-t-lg text-center wow fadeInRight" style="visibility: hidden; animation-name: none;">
-            <div>
-                <i class="fa fa-refresh features-icon"></i>
-                <h2>Synchronisation tout appareil</h2>
-                <p>Vos pièces comptables sont synchronisées sur tous vos appareils équipés de Drive et disponibles hors ligne.</p>
-            </div>
-            <div class="m-t-lg">
-                <i class="fa fa-cloud features-icon"></i>
-                <h2>Sauvegarde dans le cloud</h2>
-                <p>Drive sécurise vos documents dans le cloud et permet de restaurer des documents supprimés par erreur. </p>
-            </div>
-        </div>
+
     </div>
-</section>
-
-<section id="banque" class="features gray-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>L'assurance d'une comptabilité d'engagement<br/><span class="navy">conforme et sans erreur</span></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 col-md-offset-1 features-text">
-                <h2>Votre solde bancaire est juste et à jour</h2>
-                <i class="fa fa-check-square-o big-icon pull-right"></i>
-                <p>L'import bancaire automatique vous assure que votre solde est toujours juste à la virgule près. Pas de saisie manuelle donc pas d'erreurs. Toutes vos données sont protégées et chiffrées avec un niveau de sécurité bancaire.</p>
-            </div>
-            <div class="col-md-5 features-text">
-                <h2>Sollicitez le live chat en cas de doute</h2>
-                <i class="fa fa-comments big-icon pull-right"></i>
-                <p>Vous vous demandez comment bien utiliser les amortissements dans l'application ? Vous pouvez lancer à tout moment un live chat dans l'interface pour être formé en cas de doute. Nos conseillers vous répondent en temps réel de 9h à 20h. Essayez le ! </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 col-md-offset-1 features-text">
-                <h2>Vos comptes sont systématiquement vérifiés</h2>
-                <i class="fa fa-search big-icon pull-right"></i>
-                <p>Georges analyse chaque jour la cohérence de votre comptabilité en la comparant à des milliers d'autres. Vous recevez des notifications simples et compréhensibles pour vérifier l'affectation d'une facture ou d'une dépense.</p>
-            </div>
-            <div class="col-md-5 features-text">
-                <h2>Consulter un expert à la carte</h2>
-                <i class="fa fa-user-secret big-icon pull-right"></i>
-                <p>Georges est partenaire avec plusieurs sociétés de conseil par téléphone qui vous proposent des centaines d'experts sur tous les sujets : fiscalité, droit, social, gestion de patrimoine, etc. Vous ne dépensez que ce dont vous avez besoin, à la carte.</p>
-            </div>
-        </div>
-        <div class="row m-b-xl m-t-xl"></div>
-    </div>
-</section>
-  
-<section id="essai" class="navy-section" style="margin-top: 0">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 m-t-lg m-b-lg text-center wow zoomIn animated" style="visibility: visible;">                
-                <h1>Essayez Georges gratuitement</h1>
-                <h3>Sans engagement. Sans carte bleue. Sans les mains.</h3>
-                <div class="col-md-6 col-md-offset-3 m-t-md m-b-md">
-                    <form action="http://adways.us7.list-manage.com/subscribe/post?u=c5ab4b7bf04aeb6ba86ecc431&amp;id=41c0952df4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate input-group input-group-lg" target="_blank" novalidate>
-                      <input type="email" class="form-control text-muted" placeholder="email" name="EMAIL" id="mce-EMAIL">
-                      <span class="input-group-btn">
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c5ab4b7bf04aeb6ba86ecc431_41c0952df4" tabindex="-1" value=""></div>
-                      <input class="btn btn-success btn-rounded btn-lg" type="submit" value="Essai gratuit">
-                      </span>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  
-<section id="fiscal" class="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Votre portail unique vis-à-vis des impôts<br/><span class="navy">grâce à la télétransmission de vos déclarations.</span></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 col-md-offset-1 features-text">
-                <h2>Georges va jusqu'à la liasse fiscale</h2>
-                <i class="fa fa-archive big-icon pull-right"></i>
-                <p>Beaucoup de solutions s'arrêtent à une précomptabilité. Georges, lui, vous accompagne pas à pas lors de la clôture annuelle jusqu'à la production d'une véritable liasse fiscale avec sa télétransmission automatique.</p>
-            </div>
-            <div class="col-md-5 features-text">
-                <h2>Votre déclaration de TVA en un clic</h2>
-                <i class="fa fa-send big-icon pull-right"></i>
-                <p>Georges s'appuie sur l'analyse de vos factures pour établir automatiquement votre déclaration de TVA mensuelle, trimestrielle ou annuelle. Votre validation déclenche la télétransmission instantanée au service des impôts. </p>
-            </div>            
-        </div>
-    </div>
-</section>
-
-<section id="facturation" class="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>La vue globale de votre activité en temps réel</h1>
-                <p>Relancez vos clients, visualisez votre activité et suivez votre bénéfice sans effort.</p>
-            </div>
-        </div>
-        <div class="row features-block text-center">
-            <div class="col-sm-3 features-text wow fadeInLeft" style="visibility: hidden; animation-name: none;">
-                <i class="fa fa-file-text big-icon m-b-lg"></i>
-                <h2>Factures clients</h2>
-                <p>Utilisez le générateur de factures pour gagner du temps et suivre vos paiements en temps réel. Relancez une facture en un clic pour mieux piloter votre trésorerie qui s'actualise jour après jour dans un élégant tableau de bord.</p>
-            </div>
-            <div class="col-sm-6 text-right wow zoomIn" style="visibility: hidden; animation-name: none;">
-                <img src="./INSPINIA - Landing Page_files/iphone.jpg" class="img-responsive" alt="dashboard">
-            </div>
-            <div class="col-sm-3 features-text wow fadeInRight" style="visibility: hidden; animation-name: none;">
-                <i class="fa fa-dashboard big-icon m-b-lg"></i>
-                <h2>Visibilité instantanée</h2>
-                <p>Georges décompose vos dépenses et vos recettes dans un élégant tableau de bord. En un coup d'oeil, vous analysez vos achats et vos ventes et vous visualisez l'évolution de votre marge.  </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="pricing" class="pricing">
-    <div class="container">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Tarifs transparents</h1>
-                <p>Le pilotage automatique est gratuit pour tous. <br>Solidaire, Georges adapte le prix de sa véritable comptabilité aux moyens de chacun.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-2 wow zoomIn m-b-xl" style="visibility: hidden; animation-name: none;">
-                <ul class="pricing-plan list-unstyled" style="background-color:rgb(245,245,245);">
-                    <li class="pricing-title">
-                        Précomptabilité
-                    </li>
-                    <li class="pricing-desc">
-                        Pour piloter votre entreprise au quotidien mais conserver un expert-comptable pour les déclarations fiscales.
-                    </li>
-                    <li class="pricing-price">
-                        <span>GRATUIT</span>
-                    </li>
-                    <li>
-                        Synchronisation Drive
-                    </li>
-                    <li>
-                        Intégrations bancaires
-                    </li>
-                    <li>
-                        Facturation client
-                    </li>
-                    <li>
-                        Tableaux de bord
-                    </li>
-                    <li>
-                        Support email uniquement
-                    </li>
-                    <li>
-                        <a class="btn btn-primary btn-xs" href="#essai">Essai gratuit</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 wow zoomIn m-b-xl" style="visibility: hidden; animation-name: none;">
-                <ul class="pricing-plan list-unstyled selected">
-                    <li class="pricing-title">
-                        Comptabilité
-                    </li>
-                    <li class="pricing-desc">
-                        Plus besoin de comptable, Georges télétransmet les bonnes informations à l'administration fiscale. Vous disposez d'un live chat dans l'interface pour vous guidez.
-                    </li>
-                    <li class="pricing-price">
-                        <span>0,8%</span> du CA*
-                    </li>
-                    <li>
-                        Synchronisation Drive
-                    </li>
-                    <li>
-                        Intégrations bancaires
-                    </li>
-                    <li>
-                        Facturation client
-                    </li>
-                    <li>
-                        Tableaux de bord
-                    </li>
-                    <li>
-                        <strong>Support livechat instantané</strong>
-                    </li>
-                    <li>
-                        <strong>Télétransmissions fiscales</strong>
-                    </li>
-                    <li class="plan-action">
-                        <a class="btn btn-primary btn-xs" href="#essai">Essai gratuit</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-8 col-md-offset-2 text-center m-t-lg">
-                <p class="col-md-12">*Chaque mois, Georges analyse votre chiffre d'affaires et déduit le prix que vous lui devez. Si vous avez un trou d'air, votre comptabilité ne vous coûte rien. De la comptabilité bien pensée et ça, Georges, ça lui tient à coeur.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="gray-section contact">
-    <div class="container">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Contactez-nous</h1>
-            </div>
-        </div>
-        <div class="row m-b-lg">
-            <div class="col-lg-3 col-lg-offset-3">
-
-            </div>
-            <div class="col-lg-4">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <a href="mailto:contact@georges.tech" class="btn btn-primary">Écrivez-nous</a>
-                <!--
-                <p class="m-t-sm">
-                    Or follow us on social platform
-                </p>
-                <ul class="list-inline social-icon">
-                    <li><a href=""><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href=""><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href=""><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-                -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>© 2015 Georges Software</strong><br> </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Mainly scripts -->
-<script src="./INSPINIA - Landing Page_files/jquery-2.1.1.js"></script>
-<script src="./INSPINIA - Landing Page_files/bootstrap.min.js"></script>
-<script src="./INSPINIA - Landing Page_files/jquery.metisMenu.js"></script>
-<script src="./INSPINIA - Landing Page_files/jquery.slimscroll.min.js"></script>
-
-<!-- Custom and plugin javascript -->
-<script src="./INSPINIA - Landing Page_files/inspinia.js"></script>
-<script src="./INSPINIA - Landing Page_files/pace.min.js"></script>
-<script src="./INSPINIA - Landing Page_files/wow.min.js"></script>
-
-
-<script>
-
-    $(document).ready(function () {
-
-        $('body').scrollspy({
-            target: '.navbar-fixed-top',
-            offset: 80
-        });
-
-        // Page scrolling feature
-        $('a.page-scroll').bind('click', function(event) {
-            var link = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(link.attr('href')).offset().top - 50
-            }, 500);
-            event.preventDefault();
-        });
-    });
-
-    var cbpAnimatedHeader = (function() {
-        var docElem = document.documentElement,
-                header = document.querySelector( '.navbar-default' ),
-                didScroll = false,
-                changeHeaderOn = 120;
-        function init() {
-            window.addEventListener( 'scroll', function( event ) {
-                if( !didScroll ) {
-                    didScroll = true;
-                    setTimeout( scrollPage, 250 );
-                }
-            }, false );
-        }
-        function scrollPage() {
-            var sy = scrollY();
-            if ( sy >= changeHeaderOn ) {
-                $(header).addClass('navbar-scroll')
-            }
-            else {
-                $(header).removeClass('navbar-scroll')
-            }
-            didScroll = false;
-        }
-        function scrollY() {
-            return window.pageYOffset || docElem.scrollTop;
-        }
-        init();
-
-    })();
-
-    // Activate WOW.js plugin for animation on scrol
-    new WOW().init();
-
-</script>
+</div>
 
 
 
-</body></html>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+
+    <!-- Peity demo data -->
+    <script src="js/demo/peity-demo.js"></script>
+</body>
+
+</html>
