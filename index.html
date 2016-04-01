@@ -27,6 +27,34 @@
     analytics.load("btjlPsxMOTMmLtAE2kbTlmfi0V8fqhTv");
     analytics.page()
     }}();
+    
+    var linkHeader = document.getElementById('link-header');
+    analytics.trackLink(linkHeader, 'Clicked Call-To-Action on Landing', {
+      properties: {
+          place : 'Header'
+      }
+    });
+    
+    var linkJumbotron = document.getElementById('link-jumbotron');
+    analytics.trackLink(linkJumbotron, 'Clicked Call-To-Action on Landing', {
+      properties: {
+          place : 'Jumbotron'
+      }
+    });
+    
+    var linkBandeau = document.getElementById('link-bandeau');
+    analytics.trackLink(linkBandeau, 'Clicked Call-To-Action on Landing', {
+      properties: {
+          place : 'Bandeau'
+      }
+    });
+    
+    var linkPricing = document.getElementById('link-pricing');
+    analytics.trackLink(linkPricing, 'Clicked Call-To-Action on Landing', {
+      properties: {
+          place : 'Pricing'
+      }
+    });
     </script>
 
 </head>
@@ -44,7 +72,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://georges-meteor.herokuapp.com/register"><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
+                    <a id="link-header" class="navbar-brand" href="http://georges-meteor.herokuapp.com/register"><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -68,7 +96,7 @@
                         du praticien libéral</h1>
                     <p>Connexion bancaire et déclaration 2035 automatiques</p>
                     <p>
-                        <a class="btn btn-lg btn-primary" href="http://georges-meteor.herokuapp.com/register" role="button"><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
+                        <a id="link-jumbotron" class="btn btn-lg btn-primary" href="http://georges-meteor.herokuapp.com/register" role="button"><i class="fa fa-magic m-r-sm"></i>ESSAI GRATUIT</a>
                         <a class="caption-link" href="#banque" role="button">Comment ça marche</a>
                     </p>
                 </div>
@@ -160,7 +188,7 @@
                 <h1>Essayez Georges gratuitement</h1>
                 <h3>Sans engagement. Sans carte bleue. Sans les mains.</h3>
                 <div class="col-md-4 col-md-offset-4 m-t-md m-b-md">
-                    <a role="button" class="btn btn-lg btn-success btn-block" href="http://georges-meteor.herokuapp.com/register">ESSAI GRATUIT</a>
+                    <a id="link-bandeau" role="button" class="btn btn-lg btn-success btn-block" href="http://georges-meteor.herokuapp.com/register">ESSAI GRATUIT</a>
                 </div>
             </div>
         </div>
@@ -258,7 +286,7 @@
                         <strong>Télétransmission fiscale</strong>
                     </li>
                     <li class="plan-action">
-                        <a class="btn btn-primary btn-xs" href="http://georges-meteor.herokuapp.com/register">Essai gratuit</a>
+                        <a id="link-pricing" class="btn btn-primary btn-xs" href="http://georges-meteor.herokuapp.com/register">Essai gratuit</a>
                     </li>
                 </ul>
             </div>
