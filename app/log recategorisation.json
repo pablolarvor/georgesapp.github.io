@@ -1,0 +1,270 @@
+{
+	"_id" : "kZwKDeBsKr3T5u8vp",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 6,
+	"name_georges_new_category" : "Prélèvements personnels",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "934HTncXPyjyWgWfr",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF PAIE /BEN SCANFF /REFDO /REF",
+	"amount_in_cents_transaction" : -200000,
+	"date_transaction" : ISODate("2016-05-11T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:15:54.958Z")
+}
+{
+	"_id" : "QT9hq2bXwYwHXt4JK",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 20,
+	"name_georges_new_category" : "Assurance professionnelle",
+	"id_bankin_category" : 192,
+	"name_bankin_category" : "Epargne",
+	"id_transaction" : "BwQdhDu9oZXbJxPBc",
+	"description_transaction" : "PRLV SEPA MACSF-EPAR- ECH/060516 ID EMETTEUR/FR50Z",
+	"amount_in_cents_transaction" : -3258,
+	"date_transaction" : ISODate("2016-05-06T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:28:30.895Z")
+}
+{
+	"_id" : "MoNLMDPsf2hTRH8Rz",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 25,
+	"name_georges_old_category" : "Cotisations facultatives Madelin",
+	"id_georges_new_category" : 20,
+	"name_georges_new_category" : "Assurance professionnelle",
+	"id_bankin_category" : 245,
+	"name_bankin_category" : "Mutuelle",
+	"id_transaction" : "aKqjubNivWL2trNvZ",
+	"description_transaction" : "PRLV SEPA MACSF-PREV- ECH/060516 ID EMETTEUR/FR28Z",
+	"amount_in_cents_transaction" : -12555,
+	"date_transaction" : ISODate("2016-05-06T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:28:59.740Z")
+}
+{
+	"_id" : "Prg86tf5chic98Brf",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 23,
+	"name_georges_old_category" : "URSSAF dont CSG",
+	"id_georges_new_category" : 24,
+	"name_georges_new_category" : "RSI et retraite",
+	"id_bankin_category" : 441886,
+	"name_bankin_category" : "Cotisations Sociales",
+	"id_transaction" : "Hevo8QePuMoZWiRG8",
+	"description_transaction" : "PRLV SEPA C.A.R.P.I.M.K.O ECH/100516 ID EMETTEUR/F",
+	"amount_in_cents_transaction" : -54800,
+	"date_transaction" : ISODate("2016-05-10T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:29:22.521Z")
+}
+{
+	"_id" : "Fd6m8yQXSbNoqiGKb",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 27,
+	"name_georges_old_category" : "Taxe, impôts, CFE",
+	"id_georges_new_category" : 23,
+	"name_georges_new_category" : "URSSAF dont CSG",
+	"id_bankin_category" : 206,
+	"name_bankin_category" : "Impôts & Taxes - Autres",
+	"id_transaction" : "ZKDkC393M4ydfv4E3",
+	"description_transaction" : "PRLV SEPA URSSAF ILE DE FRANCE ECH/060516 ID EMETT",
+	"amount_in_cents_transaction" : -59800,
+	"date_transaction" : ISODate("2016-05-06T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:30:01.029Z")
+}
+{
+	"_id" : "E65dJ92EYxrNWcYa6",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 2,
+	"name_georges_new_category" : "Redevance de collaboration",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "MgDWJTqYkXhXZETZG",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF RETRO AVRIL 2016 /BEN QUENET LAUR",
+	"amount_in_cents_transaction" : -119535,
+	"date_transaction" : ISODate("2016-04-29T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:30:42.657Z")
+}
+{
+	"_id" : "bp5RuyvR4ZNkxdW7J",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 6,
+	"name_georges_new_category" : "Prélèvements personnels",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "5F6auxBKoais6YdpB",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF PAIE /BEN SCANFF /REFDO /REF",
+	"amount_in_cents_transaction" : -160000,
+	"date_transaction" : ISODate("2016-04-27T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:32:50.166Z")
+}
+{
+	"_id" : "opF87j5nKMnYtxkSg",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 20,
+	"name_georges_new_category" : "Assurance professionnelle",
+	"id_bankin_category" : 192,
+	"name_bankin_category" : "Epargne",
+	"id_transaction" : "o3FGFxYG6Aa8z9xnb",
+	"description_transaction" : "PRLV SEPA MACSF-EPAR- ECH/050416 ID EMETTEUR/FR50Z",
+	"amount_in_cents_transaction" : -3258,
+	"date_transaction" : ISODate("2016-04-05T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:32:59.563Z")
+}
+{
+	"_id" : "uyRXDctTHmdFZkfhF",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 32,
+	"name_georges_new_category" : "Formation",
+	"id_bankin_category" : 1,
+	"name_bankin_category" : "A catégoriser",
+	"id_transaction" : "AwCMtuvFN58nqmxn7",
+	"description_transaction" : "PRLV SEPA INSTITUT DE THERAPIE MANUELLE DE PA ECH/",
+	"amount_in_cents_transaction" : -17625,
+	"date_transaction" : ISODate("2016-04-05T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:33:42.301Z")
+}
+{
+	"_id" : "iNCpCeedakj3Dix3g",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 6,
+	"name_georges_new_category" : "Prélèvements personnels",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "tsPEPobE2dCkTsteG",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF PAIE /BEN SCANFF /REFDO /REF",
+	"amount_in_cents_transaction" : -250000,
+	"date_transaction" : ISODate("2016-04-04T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:33:51.422Z")
+}
+{
+	"_id" : "iWcqGk8wnQLSyk9gy",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 1,
+	"name_georges_new_category" : "Rétrocession",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "S8gDimY8b86Gdhxt4",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF RETRO MARS 2016 SCANFF /BEN QUENE",
+	"amount_in_cents_transaction" : -156619,
+	"date_transaction" : ISODate("2016-04-01T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:33:57.515Z")
+}
+{
+	"_id" : "rg4vxhJEmsqY2THdi",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 1,
+	"name_georges_new_category" : "Rétrocession",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "n4FHj9oZqTeunmR5B",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF PAIE /BEN SCANFF /REFDO /REF",
+	"amount_in_cents_transaction" : -200000,
+	"date_transaction" : ISODate("2016-03-18T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:34:05.780Z")
+}
+{
+	"_id" : "rBojSPi89TEze49pK",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 32,
+	"name_georges_new_category" : "Formation",
+	"id_bankin_category" : 88,
+	"name_bankin_category" : "Chèques",
+	"id_transaction" : "teBJBGRpt2bevEws4",
+	"description_transaction" : "CHEQUE 7466260",
+	"amount_in_cents_transaction" : -36000,
+	"date_transaction" : ISODate("2016-03-10T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:34:32.478Z")
+}
+{
+	"_id" : "mjRNziNDcCuH2qdFc",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 20,
+	"name_georges_new_category" : "Assurance professionnelle",
+	"id_bankin_category" : 192,
+	"name_bankin_category" : "Epargne",
+	"id_transaction" : "6fBua9nFQMkccZNGT",
+	"description_transaction" : "PRLV SEPA MACSF-EPAR- ECH/070316 ID EMETTEUR/FR50Z",
+	"amount_in_cents_transaction" : -3258,
+	"date_transaction" : ISODate("2016-03-07T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:34:32.754Z")
+}
+{
+	"_id" : "7HtxHzQrac4fNKBtt",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 32,
+	"name_georges_new_category" : "Formation",
+	"id_bankin_category" : 1,
+	"name_bankin_category" : "A catégoriser",
+	"id_transaction" : "B5Ge9hrEhZbgy7fZF",
+	"description_transaction" : "PRLV SEPA INSTITUT DE THERAPIE MANUELLE DE PA ECH/",
+	"amount_in_cents_transaction" : -17625,
+	"date_transaction" : ISODate("2016-03-04T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:34:37.111Z")
+}
+{
+	"_id" : "ygpvo2cBApMbbyzds",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 6,
+	"name_georges_new_category" : "Prélèvements personnels",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "angbuygZm5auB7Sux",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF PAIE /BEN SCANFF /REFDO /REF",
+	"amount_in_cents_transaction" : -200000,
+	"date_transaction" : ISODate("2016-03-02T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:35:06.415Z")
+}
+{
+	"_id" : "Jp8Lh7JEvCNoNx5yE",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 1,
+	"name_georges_new_category" : "Rétrocession",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "Fm9Z4drb4eT2hTFTG",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF RETRO FEVRIER SCANFF /BEN QUENET",
+	"amount_in_cents_transaction" : -120187,
+	"date_transaction" : ISODate("2016-02-29T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:35:19.215Z")
+}
+{
+	"_id" : "8ku7RWnrib7hGZHvx",
+	"id_user" : "gL4kRtPdNTjxQ4gDu",
+	"id_georges_old_category" : 0,
+	"name_georges_old_category" : "À catégoriser",
+	"id_georges_new_category" : 6,
+	"name_georges_new_category" : "Prélèvements personnels",
+	"id_bankin_category" : 78,
+	"name_bankin_category" : "Virements",
+	"id_transaction" : "snH226FwmqQrooF3W",
+	"description_transaction" : "VIREMENT SEPA EMIS /MOTIF PAIE /BEN SCANFF /REFDO /REF",
+	"amount_in_cents_transaction" : -100000,
+	"date_transaction" : ISODate("2016-02-16T00:00:00Z"),
+	"date_recategorisation" : ISODate("2016-05-17T18:35:26.617Z")
+}
