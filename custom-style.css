@@ -141,6 +141,10 @@
   line-height: 70px;
 }
 
+.landing-page #fiscal .primary-color {
+  color: #1ab394;
+}
+
 @media (max-width: 750px) {
   .landing-page #fiscal i {
     font-size: 40px;
