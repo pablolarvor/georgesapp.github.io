@@ -136,6 +136,7 @@
 
 .landing-page #fiscal i {
   font-size: 60px;
+  line-height: 70px;
 }
 
 @media (max-width: 750px) {

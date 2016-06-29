@@ -13,6 +13,14 @@ $(document).ready(function () {
     }, 500);
     event.preventDefault();
   });
+
+
+  $('.contact-button').click(function(event) {
+    event.preventDefault();
+    Intercom('show');
+  });
+
+
 });
 
 var cbpAnimatedHeader = (function() {
