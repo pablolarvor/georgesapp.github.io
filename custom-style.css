@@ -23,6 +23,7 @@
 
 .landing-page .hero .btn-primary {
   font-weight: 700;
+  font-size: 18px;
 }
 
 @media (min-width: 1200px) {
@@ -31,15 +32,6 @@
   }
 }
 
-.landing-page .hero .desktop-dashboard {
-  -moz-box-shadow: 0px 0px 30px 0px #c0c0c0;
-  -webkit-box-shadow: 0px 0px 30px 0px #c0c0c0;
-  -o-box-shadow: 0px 0px 30px 0px #c0c0c0;
-  box-shadow: 0px 0px 30px 0px #c0c0c0;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=30);
-
-  padding: 0;
-}
 
 .landing-page .hero .desktop-dashboard-wrapper {
   padding: 0 30px 0 30px;
@@ -122,6 +114,16 @@
     max-width: 300px;
     margin: 50px auto 50px auto;
   }
+}
+
+.landing-page #facturation .desktop-dashboard {
+  -moz-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  -webkit-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  -o-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  box-shadow: 0px 0px 30px 0px #c0c0c0;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=30);
+
+  padding: 0;
 }
 
 /* FISCAL */
