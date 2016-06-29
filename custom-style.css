@@ -23,6 +23,7 @@
 
 .landing-page .hero .btn-primary {
   font-weight: 700;
+  font-size: 18px;
 }
 
 @media (min-width: 1200px) {
@@ -31,15 +32,6 @@
   }
 }
 
-.landing-page .hero .desktop-dashboard {
-  -moz-box-shadow: 0px 0px 30px 0px #c0c0c0;
-  -webkit-box-shadow: 0px 0px 30px 0px #c0c0c0;
-  -o-box-shadow: 0px 0px 30px 0px #c0c0c0;
-  box-shadow: 0px 0px 30px 0px #c0c0c0;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=30);
-
-  padding: 0;
-}
 
 .landing-page .hero .desktop-dashboard-wrapper {
   padding: 0 30px 0 30px;
@@ -124,6 +116,16 @@
   }
 }
 
+.landing-page #facturation .desktop-dashboard {
+  -moz-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  -webkit-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  -o-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  box-shadow: 0px 0px 30px 0px #c0c0c0;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=30);
+
+  padding: 0;
+}
+
 /* FISCAL */
 .landing-page #fiscal {
   padding: 0 0 10px 0;
@@ -137,6 +139,10 @@
 .landing-page #fiscal i {
   font-size: 60px;
   line-height: 70px;
+}
+
+.landing-page #fiscal .primary-color {
+  color: #1ab394;
 }
 
 @media (max-width: 750px) {
@@ -215,6 +221,9 @@
   border: none;
 }
 
+.landing-page section p {
+  color: #999999;
+}
 
 /* Laptop */
 /*http://purecssapple.com/?type=1&width=220&color=rgb(200%2C200%2C200)*/
