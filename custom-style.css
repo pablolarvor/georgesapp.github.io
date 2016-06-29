@@ -1,0 +1,383 @@
+/* HERO */
+
+.landing-page .hero {
+  background: linear-gradient(285deg,#169c81,#465e77);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+
+.landing-page .hero .blank {
+  top: 120px;
+}
+
+.landing-page .hero .title-block {
+  margin-top: 40px;
+}
+
+.landing-page .hero .btn-default:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #1ab394;
+}
+
+.landing-page .hero .btn-primary {
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .landing-page .hero .btn-primary {
+    margin-left: 0;
+  }
+}
+
+.landing-page .hero .desktop-dashboard {
+  -moz-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  -webkit-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  -o-box-shadow: 0px 0px 30px 0px #c0c0c0;
+  box-shadow: 0px 0px 30px 0px #c0c0c0;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=30);
+
+  padding: 0;
+}
+
+.landing-page .hero .desktop-dashboard-wrapper {
+  padding: 0 30px 0 30px;
+}
+
+.landing-page .hero h1 {
+  font-weight: 500;
+  text-transform: none;
+}
+
+.landing-page .hero h1 .green-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1ab394;
+  font-size: 60px;
+}
+
+.landing-page .hero h2 {
+  font-size: 40px;
+}
+
+.landing-page .hero .subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 20px 0 40px 0;
+}
+
+
+
+
+/* FEATURES */
+.landing-page #features {
+  padding-bottom: 70px;
+}
+
+.landing-page #features h2 {
+  font-weight: 500;
+}
+
+
+
+/* TESTIMONIALS */
+.landing-page #testimonials {
+  background: linear-gradient(285deg,#169c81,#465e77);
+  padding: 100px 0 100px 0;
+}
+
+.landing-page #testimonials p {
+  color: white;
+}
+
+
+
+/* BANQUE */
+
+@media (max-width: 766px) {
+  #banque .feature {
+    max-width: 300px;
+    margin: 50px auto 50px auto;
+  }
+  @media (min-width: 400px) {
+    #banque img {
+      max-width: 400px;
+      margin: 0 auto 20px auto;
+    }
+  }
+}
+
+
+
+
+/* ESSAI */
+
+
+
+/* FACTURATION */
+
+@media (max-width: 750px) {
+  #facturation .feature {
+    max-width: 300px;
+    margin: 50px auto 50px auto;
+  }
+}
+
+/* FISCAL */
+.landing-page #fiscal {
+  padding: 0 0 10px 0;
+}
+
+.landing-page #fiscal i {
+  position: relative;
+  top: 9px;
+}
+
+.landing-page #fiscal i {
+  font-size: 60px;
+}
+
+@media (max-width: 750px) {
+  .landing-page #fiscal i {
+    font-size: 40px;
+  }
+}
+
+
+/* PRICING */
+.landing-page #pricing {
+  color: white;
+  background: linear-gradient(285deg,#169c81,#465e77);
+  padding: 0 0 50px 0;
+}
+
+.landing-page #pricing p {
+  color: white;
+}
+
+.landing-page #pricing .pricing-plan li:first-child {
+  border: none;
+}
+
+
+
+/* SECURITE */
+.landing-page #securite h2 {
+  font-weight: 500;
+}
+
+
+/* EMAIL */
+
+
+
+/* DRIVE */
+
+#drive .feature {
+  min-height: 200px;
+}
+
+@media (max-width: 750px) {
+  #drive .feature {
+    min-height: 200px;
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+
+/* CONTACT */
+
+
+
+
+/* General */
+
+.landing-page .navy-section {
+  background: linear-gradient(285deg,#169c81,#465e77);
+}
+
+.landing-page .gradient-picto {
+  background: linear-gradient(285deg,#169c81,#465e77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-page .big-icon {
+  color: white;
+}
+
+#intercom-container #intercom-launcher .intercom-launcher-button {
+  border: none;
+}
+
+
+/* Laptop */
+/*http://purecssapple.com/?type=1&width=220&color=rgb(200%2C200%2C200)*/
+
+.laptop {
+  margin-top: 70px;
+}
+
+.pca-hold {
+  width: 447px;
+  margin: 0 auto;
+}
+.pca-hold .pca-main {
+  display: block;
+  position: relative;
+  background-color: #d4d4d4;
+  border: 13.41px solid #2d2d2d;
+  height: 286.08px;
+  border-top-left-radius: 13.41px;
+  border-top-right-radius: 13.41px;
+}
+.pca-hold .pca-main:after {
+  content: '';
+  position: absolute;
+  top: -10.94px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  width: 4.47px;
+  height: 4.47px;
+  background-color: #959595;
+  border-radius: 100%;
+}
+.pca-hold .pca-inner {
+  display: block;
+}
+.pca-hold .pca-sub {
+  display: block;
+  text-align: center;
+  position: relative;
+  height: 22.35px;
+}
+.pca-hold .pca-sub .pca-top {
+  position: absolute;
+  bottom: 0;
+  left: -55.875px;
+  display: block;
+  width: 558.75px;
+  height: 22.35px;
+  border-bottom-left-radius: 49.17px;
+  border-bottom-right-radius: 49.17px;
+  background-color: #e8e8e8;
+  opacity: 1;
+  z-index: 2;
+}
+.pca-hold .pca-sub .pca-bot {
+  display: block;
+  width: 178.8px;
+  height: 13.41px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #B1B1B1;
+  border-radius: 0 0 201.15px 201.15px;
+  opacity: 1;
+  z-index: 2;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+.pca-hold #player {
+  height: 260px;
+  width: 421px;
+}
+
+
+
+/* Little devices : */
+
+@media (max-width: 750px) {
+  .pca-hold {
+    width: 220px;
+    margin: 0 27.5px;
+  }
+  .pca-hold .pca-main {
+    display: block;
+    position: relative;
+    background-color: #c8c8c8;
+    border: 6.6px solid #2d2d2d;
+    height: 140.8px;
+    border-top-left-radius: 6.6px;
+    border-top-right-radius: 6.6px;
+  }
+  .pca-hold .pca-main:after {
+    content: '';
+    position: absolute;
+    top: -6.4px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    width: 2.2px;
+    height: 2.2px;
+    background-color: #959595;
+    border-radius: 100%;
+  }
+  .pca-hold .pca-inner {
+    display: block;
+  }
+  .pca-hold .pca-sub {
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 11px;
+  }
+  .pca-hold .pca-sub .pca-top {
+    position: absolute;
+    bottom: 0;
+    left: -27.5px;
+    display: block;
+    width: 275px;
+    height: 11px;
+    border-bottom-left-radius: 24.2px;
+    border-bottom-right-radius: 24.2px;
+    background-color: #e8e8e8;
+    opacity: 1;
+    z-index: 2;
+  }
+  .pca-hold .pca-sub .pca-bot {
+    display: block;
+    width: 88px;
+    height: 6.6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #B1B1B1;
+    border-radius: 0 0 99px 99px;
+    opacity: 1;
+    z-index: 2;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+  }
+
+
+  .pca-hold #player {
+    height: 129px;
+    width: 208px;
+  }
+
+  .pca-hold {
+    margin-left: calc(50% - 115px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .landing-page .title-block {
+    text-align: center;
+  }
+}
