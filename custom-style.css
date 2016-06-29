@@ -217,6 +217,9 @@
   border: none;
 }
 
+.landing-page section p {
+  color: #999999;
+}
 
 /* Laptop */
 /*http://purecssapple.com/?type=1&width=220&color=rgb(200%2C200%2C200)*/
