@@ -32,7 +32,6 @@
   }
 }
 
-
 .landing-page .hero .desktop-dashboard-wrapper {
   padding: 0 30px 0 30px;
 }
@@ -175,6 +174,7 @@
 }
 
 
+
 /* EMAIL */
 
 
@@ -205,6 +205,10 @@
 
 .landing-page .navy-section {
   background: linear-gradient(285deg,#169c81,#465e77);
+}
+
+.landing-page .services {
+    padding-top: 0;
 }
 
 .landing-page .gradient-picto {
@@ -391,3 +395,4 @@
     text-align: center;
   }
 }
+s
